@@ -44,3 +44,12 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :external_pipeline, {
+  name: :webpack,
+  command: build? ?
+    "NODE_ENV=production npm run build" :
+    "NODE_ENV=develop npm run develop",
+  source: "./build",
+  latency: 1
+}
