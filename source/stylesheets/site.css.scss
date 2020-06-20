@@ -1,0 +1,15 @@
+@import "normalize";
+
+html {
+  font-size: 62.5%;
+  color: #011b43;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+@import "tasks/all";
