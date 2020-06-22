@@ -4,10 +4,7 @@ window.onload = async function() {
 
   if( github ) {
     const json = await githubIssues()
-    json.forEach(record => {
-      console.table(record)
-      github.insertAdjacentHTML('afterbegin', template(record))
-    }) 
+    await json.forEach(record => github.insertAdjacentHTML('afterbegin', template(record))) 
   }
 
   async function githubIssues() {
