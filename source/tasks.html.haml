@@ -1,4 +1,13 @@
 .tasks
+  %a.task
+    .task__user
+    .task__body
+      %h2.task__headline 
+        %span.task__headline-title 読み込み中...
+      .task__information
+    .task__comment
+      %span.material-icons.task__comment-icon push_pin
+
   %a.task{ href: "#", data: { state: "open" }, aria: { selected: "false" } }
     .task__user
       %img.task__user-avatar{ src: "https://avatars0.githubusercontent.com/u/12642?v=4" }
