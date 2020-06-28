@@ -11,6 +11,7 @@
   },
   "scripts": {
     "develop": "webpack --config ./webpack.config.js --watch -d --progress --colors",
-    "build": "webpack --config ./webpack.config.js --bail -p"
+    "build": "webpack --config ./webpack.config.js --bail -p",
+    "test": "jest"
   }
 }
