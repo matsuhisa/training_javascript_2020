@@ -7,5 +7,11 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: __dirname + '/build/javascripts'
-  }
+  },
+
+  mode: "development",
+
+  rules: [
+    { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+  ]
 };

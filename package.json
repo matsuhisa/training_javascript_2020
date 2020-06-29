@@ -19,5 +19,10 @@
     "develop": "webpack --config ./webpack.config.js --watch -d --progress --colors",
     "build": "webpack --config ./webpack.config.js --bail -p",
     "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
