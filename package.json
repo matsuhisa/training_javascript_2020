@@ -21,6 +21,8 @@
     "test": "jest"
   },
   "jest": {
+    "automock": false,
+    "setupFiles": ["./setupJest.js"],
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
