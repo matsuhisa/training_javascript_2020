@@ -1,0 +1,6 @@
+.accordion-body {
+  padding: 0.5rem;
+  &[aria-disabled="true"] {
+    display: none;
+  }
+}
