@@ -1,0 +1,13 @@
+%div{ style: "padding: 2em;" }
+
+  %div{ onClick: "alert('divです')", style: "border: 2px solid red;padding: 2em;" }
+    %p{ onClick: "alert('pです')", style: "border: 2px solid blue;padding: 2em;" }
+      %span{ onClick: "alert('spanです')", style: "border: 2px solid orange;padding: 2em; display: block;" }
+        イベントの伝搬１
+
+  %hr{ style: "margin:2em 0;display: block;" }
+
+  %div{ onClick: "alert('divです')", style: "border: 2px solid red;padding: 2em;" }
+    %p{ onClick: "alert('pです')", style: "border: 2px solid blue;padding: 2em;" }
+      %span{ style: "border: 2px solid orange;padding: 2em; display: block;" }
+        イベントの伝搬２
