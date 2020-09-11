@@ -1,0 +1,22 @@
+---
+title: カウンター
+---
+= javascript_include_tag "ui/counter"
+
+%h1 カウンター
+
+.counter{ data: { min: 0, max: 10, current: 0 } }
+  .counter__minus{ data: { action: "minus" } }
+    引く
+  .counter__count{ data: { action: "view" } } -
+  .counter__plus{ data: { action: "plus" } }
+    足す
+  %input{ type: "hidden", name: "[option][bar][foo]", value: "0" }
+%hr
+
+.counter{ data: { min: 0, max: 10, current: 1 } }
+  .counter__minus{ data: { action: "minus" } }
+    引く
+  .counter__count{ data: { action: "view" } } -
+  .counter__plus{ data: { action: "plus" } }
+    足す
