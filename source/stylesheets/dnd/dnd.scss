@@ -1,0 +1,17 @@
+.menu-list {
+  margin: 1em;
+  .menu-list__menu {
+    background-color: white;
+    padding: 0.4em;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+
+    & + .menu-list__menu {
+      border-top: none;
+    }
+
+    &.-dragover {
+      background-color: pink;
+    }
+  }
+}
