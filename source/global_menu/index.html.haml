@@ -1,0 +1,28 @@
+---
+title: グローバルメニュー
+---
+= javascript_include_tag "ui/global_menu"
+
+%header.global-header
+  %nav.global-menu
+    .global-menu__logo ロゴ
+    .global-menu__icon-bread
+      %nav.pulldown-menu{ aria: { hidden: "true" } }
+        %ul.pulldown-menu__items
+          %li.pulldown-menu__item
+            %a{ href: "#" } アイウエオ
+          %li.pulldown-menu__item
+            %a{ href: "#" } アイウエオ
+
+.global-menu-contents
+  %h1 グローバルメニュー
+
+  %div{ style: "height: 300px; background-color: red;" }
+    123
+  %div{ style: "height: 300px; background-color: blue;" }
+    456
+  %div{ style: "height: 300px; background-color: green;" }
+    789
+
+-# - aria属性が使えそう
+-# - https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute
