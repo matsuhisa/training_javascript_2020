@@ -1,0 +1,37 @@
+.horizontal-scroll {
+  overflow: hidden;
+  width: 100%;
+
+  .horizontal-scroll__mask {
+    height: calc(100% + 2em);
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .horizontal-scroll__list {
+    display: inline-table;
+    // max-width: 100%;
+  }
+
+  .horizontal-scroll__item {
+    display: table-cell;
+    width: 100%;
+    // & > img {
+    //   width: 100%;
+    // }
+  }
+}
+
+.steps {
+  display: flex;
+  .steps__step {
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    padding: .4em;
+
+    &[aria-current="step"] {
+      background-color: #999999;
+    }
+  }
+}
