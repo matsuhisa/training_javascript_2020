@@ -1,0 +1,21 @@
+---
+title: swiper1
+---
+= javascript_include_tag "ui/swiper1"
+
+.swiper{ data: { ui: 'swiper' } }
+  .swiper__mask
+    .swiper__wrapper{ data: { ui: 'swiper-wrapper' } }
+      .swiper__slide{ data: { ui: 'swiper-slide' } }
+        %img{ src: "https://placekitten.com/g/640/480", alt: "" }
+      .swiper__slide{ data: { ui: 'swiper-slide' } }
+        %img{ src: "https://placekitten.com/g/640/480", alt: "" }
+      .swiper__slide{ data: { ui: 'swiper-slide' } }
+        %img{ src: "https://placekitten.com/g/640/480", alt: "" }
+      .swiper__slide{ data: { ui: 'swiper-slide' } }
+        %img{ src: "https://placekitten.com/g/640/480", alt: "" }
+  .swiper-button-next{ data: { ui: 'swiper-next' } }
+    次 ＞
+  .swiper-button-prev{ data: { ui: 'swiper-prev' } }
+    ＜ 前
+  .swiper-pagination{ data: { ui: 'swiper-pagination' } }
