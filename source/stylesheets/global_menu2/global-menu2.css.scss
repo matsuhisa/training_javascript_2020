@@ -16,6 +16,11 @@
       margin-top: -  10px / 2;
       border-top: solid 2px red;
       border-right: solid 2px red;
+
+      transition-duration: 0.25s;
+      transition-delay: 0s;
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &[aria-expanded="true"] {
