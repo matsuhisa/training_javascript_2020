@@ -1,10 +1,16 @@
 .global-menu2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
   background-color: plum;
 
   .global-menu2__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 1em;
 
     &::after {
@@ -41,10 +47,15 @@
     grid-template-columns: repeat(auto-fit,minmax(50%,auto));
     grid-gap: 0;
     gap: 0;
+
+    flex: 1;
+    overflow: scroll;
+
+    border: 1px solid black;
   }
   
   .global-menu2__inside-item {
-    padding: 1em;
+    padding: 3em 1em;
   
     border-bottom: 1px solid blue;
   
