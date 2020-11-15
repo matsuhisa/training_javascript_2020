@@ -3,23 +3,41 @@ title: グローバルメニュー2
 ---
 = javascript_include_tag "ui/global_menu2"
 
-.global-menu2
-  .global-menu2__item{ aria: { expanded: 'true' } }
-    %span メニュー1
-  .global-menu2__inside
-    .global-menu2__inside-item 1アイテム
-    .global-menu2__inside-item 2アイテムアイテム
-    .global-menu2__inside-item 3アイテム
-    .global-menu2__inside-item 4アイテム
-    .global-menu2__inside-item 5アイテム
-    .global-menu2__inside-item 6アイテム
-    .global-menu2__inside-item 7アイテム
-    .global-menu2__inside-item 8アイテム
-    .global-menu2__inside-item 9アイテム
-    .global-menu2__inside-item 10アイテム
-    .global-menu2__inside-item 11アイテム
-    .global-menu2__inside-item 
-  .global-menu2__item{ aria: { expanded: 'false' } }
-    %span メニュー2
-  .global-menu2__item{ aria: { expanded: 'false' } }
-    %span メニュー3
+.global-navi
+  .global-navi__inside
+    .global-navi__header
+      あいうえお
+      .global-navi__icon
+        メニュー
+
+    .global-menu2-back{ data: { hamburger: 'menu' }, aria: { hidden: "true" } }
+      .global-menu2
+        .global-menu2__item{ aria: { expanded: 'true' } }
+          %span メニュー1
+        .global-menu2__inside
+          .global-menu2__inside-item 1アイテム
+          .global-menu2__inside-item 2アイテムアイテム
+          .global-menu2__inside-item 3アイテム
+          .global-menu2__inside-item 4アイテム
+          .global-menu2__inside-item 5アイテム
+          .global-menu2__inside-item 6アイテム
+          .global-menu2__inside-item 7アイテム
+          .global-menu2__inside-item 8アイテム
+          .global-menu2__inside-item 9アイテム
+          .global-menu2__inside-item 10アイテム
+          .global-menu2__inside-item 11アイテム
+          .global-menu2__inside-item 
+        .global-menu2__item{ aria: { expanded: 'false' } }
+          %span メニュー2
+        .global-menu2__item{ aria: { expanded: 'false' } }
+          %span メニュー3
+
+.contents
+  %h1 グローバルメニュー2
+  %div{ style: "height: 300px; background-color: red;" }
+    123
+  %div{ style: "height: 300px; background-color: blue;" }
+    456
+  %div{ style: "height: 300px; background-color: green;" }
+    789
+
